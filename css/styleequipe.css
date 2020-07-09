@@ -1,0 +1,150 @@
+body {
+    margin: 0 auto;
+    padding: 0 auto;
+    background-image: url(../img/bg-equipe.jpg);
+    background-repeat: no-repeat;
+    background-size: 1600px;
+}
+
+.cabecalho {
+    background-color: white;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    align-items: center;
+    text-align: center;
+    font-family: "Roboto", sans-serif;
+}
+
+.cabecalho .uptade {
+    color: #173ea8;
+}
+
+.cabecalho .logo img {
+    width: 100px;
+    height: 100px;
+}
+
+.navbar {
+    background-color: #173ea8;
+    color: white;
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 18px;
+    box-shadow: 3px 3px 5px rgb(11, 25, 214);
+}
+
+.navbar li {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    margin-left: 50px;
+}
+
+.social-escola i {
+    color: #173ea8;
+    font-size: 25px;
+    margin: 5px;
+}
+
+.social-escola i:hover {
+    color: #ff8c00;
+    font-size: 25px;
+    margin: 5px;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: white;
+}
+
+.navbar a:hover {
+    text-decoration: none;
+    color: rgb(238, 199, 25);
+}
+
+
+/*Estilo da equipe*/
+
+.equipe {
+    background-color: white;
+    box-shadow: 3px 3px 5px rgb(187, 186, 186);
+    margin: 50px;
+    border-radius: 5px;
+    font-family: "Josefin Sans", sans-serif;
+    height: 550px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+
+.equipe .titulo {
+    margin-top: 15px;
+}
+
+.equipe .titulo h1 {
+    color: #173ea8;
+    text-shadow: 0 1px 3px #173ea8;
+    text-align: center;
+    font-size: 30px;
+}
+
+
+/*Aumentar o numero de participantes da equipe*/
+
+.equipe .participante {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+}
+
+.equipe .participante .pessoa {
+    overflow: hidden;
+    margin: 25px;
+    width: 200px;
+    height: 350px;
+    max-width: 200px;
+    max-height: 350px;
+    box-shadow: 1px 1px 5px rgb(148, 148, 148);
+    background-color: rgb(0, 0, 0);
+}
+
+.equipe .participante .pessoa img {
+    width: 200px;
+    height: 350px;
+    transition: all 0.3s;
+    opacity: 1.0;
+}
+
+.equipe .participante .pessoa img:hover {
+    transform: scale(1.1);
+    opacity: 0.2;
+}
+
+.equipe .participante .pessoa .desc {
+    text-align: center;
+    align-items: center;
+}
+
+.equipe .participante .pessoa .desc h1 {
+    position: absolute;
+    color: white;
+    text-align: center;
+    font-weight: 700;
+    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.6);
+    margin-top: -70px;
+    margin-left: 40px;
+    z-index: 9999;
+    font-size: 25px;
+}
+
+.equipe .participante .pessoa .desc h2 {
+    position: absolute;
+    color: white;
+    text-align: center;
+    align-items: center;
+    font-weight: 700;
+    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.6);
+    margin-top: -40px;
+    margin-left: 55px;
+    z-index: 9999;
+    font-size: 15px;
+}
